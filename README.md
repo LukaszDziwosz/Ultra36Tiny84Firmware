@@ -29,17 +29,7 @@ Ultra36Tiny84Firmware/
     •    Auto-detects Flash type via jumper input (internal pull-up)
 
 ## 🛠️ Pin Usage (ATtiny84A)
-Pin                 Role                   Notes
-PA0                 A15 (ROM Bank Bit)     Output
-PA1                 A16                    Output
-PA2                 $D700 Trap             Input with internal pull-up
-PA3                 A17                    Output
-PA4                 A18 (040 only)         Output if jumper present
-PA5                 JiffyDOS toggle        Output
-PA6                 RESET sense            Input – detects long press
-PB0                 EEPROM type jumper     Input – grounded = SST39SF040
-PB1                 (Unused / Future)
-PB2                 (Optional)             Programming or expansion use
+![Alt text](pinout.png)
 
 ## 🔧 Programming & Upload
 
