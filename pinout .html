@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATtiny84A Pinout</title>
+    <title>ATtiny84A Ultra-36 Pinout</title>
     <style>
         body {
             font-family: 'Courier New', monospace;
@@ -29,6 +29,13 @@
             margin-bottom: 30px;
             color: #00ff88;
             text-shadow: 0 0 10px rgba(0,255,136,0.3);
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #88ffaa;
         }
         
         .chip {
@@ -97,15 +104,15 @@
         }
         
         .pin-label-left {
-            left: -200px;
+            left: -220px;
             text-align: right;
-            width: 150px;
+            width: 170px;
         }
         
         .pin-label-right {
-            right: -200px;
+            right: -220px;
             text-align: left;
-            width: 150px;
+            width: 170px;
         }
         
         .function {
@@ -118,7 +125,7 @@
         .ground { background: #444; color: #ccc; }
         .output { background: #4488ff; }
         .input { background: #ffaa44; }
-        .unused { background: #666; }
+        .databus { background: #44ff88; }
         .programming { background: #ff88ff; }
         .dual { background: linear-gradient(to right, #ffaa44 50%, #ff88ff 50%); }
         
@@ -148,7 +155,7 @@
         .legend-color.ground { background: #444; }
         .legend-color.output { background: #4488ff; }
         .legend-color.input { background: #ffaa44; }
-        .legend-color.unused { background: #666; }
+        .legend-color.databus { background: #44ff88; }
         .legend-color.programming { background: #ff88ff; }
         .legend-color.dual { background: linear-gradient(to right, #ffaa44 50%, #ff88ff 50%); }
         
@@ -170,98 +177,118 @@
             font-size: 13px;
             line-height: 1.4;
         }
+
+        .info-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #333;
+            border-left: 4px solid #44ff88;
+            border-radius: 5px;
+        }
+        
+        .info-box h3 {
+            margin: 0 0 10px 0;
+            color: #44ff88;
+        }
+        
+        .info-box p {
+            margin: 5px 0;
+            font-size: 13px;
+            line-height: 1.4;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="title">ATtiny84A Ultra-36</div>
+        <div class="subtitle">Pure Software Bank Switching with Data Bus Interface</div>
         
         <div class="chip">
             <div class="notch"></div>
             
             <!-- Pin 1: VCC -->
-<div class="pin pin-left power" style="top: 25px;">1</div>
-<div class="pin-label pin-label-left" style="top: 30px; left: -200px;">
-    <span class="function">(POWER)</span> VCC
-</div>
+            <div class="pin pin-left power" style="top: 25px;">1</div>
+            <div class="pin-label pin-label-left" style="top: 30px; left: -220px;">
+                <span class="function">(POWER)</span> VCC
+            </div>
 
-<!-- Pin 2: PB0 -->
-<div class="pin pin-left unused" style="top: 70px;">2</div>
-<div class="pin-label pin-label-left" style="top: 75px; left: -200px;">
-    <span class="function">(Reserved)</span> PB0
-</div>
+            <!-- Pin 2: PB0 -->
+            <div class="pin pin-left databus" style="top: 70px;">2</div>
+            <div class="pin-label pin-label-left" style="top: 75px; left: -220px;">
+                <span class="function">(Data Bus D4)</span> PB0
+            </div>
 
-<!-- Pin 3: PB1 -->
-<div class="pin pin-left input" style="top: 115px;">3</div>
-<div class="pin-label pin-label-left" style="top: 120px; left: -200px;">
-    <span class="function">($D700 Trap)</span> PB1
-</div>
+            <!-- Pin 3: PB1 -->
+            <div class="pin pin-left input" style="top: 115px;">3</div>
+            <div class="pin-label pin-label-left" style="top: 120px; left: -220px;">
+                <span class="function">($D700 Trap)</span> PB1
+            </div>
 
-<!-- Pin 4: PB3/RESET -->
-<div class="pin pin-left dual" style="top: 160px;">4</div>
-<div class="pin-label pin-label-left" style="top: 165px; left: -200px;">
-    <span class="function">(RESET Sense)</span> PB3
-</div>
+            <!-- Pin 4: PB3/RESET -->
+            <div class="pin pin-left dual" style="top: 160px;">4</div>
+            <div class="pin-label pin-label-left" style="top: 165px; left: -220px;">
+                <span class="function">(RESET Sense)</span> PB3
+            </div>
 
-<!-- Pin 5: PB2 -->
-<div class="pin pin-left output" style="top: 205px;">5</div>
-<div class="pin-label pin-label-left" style="top: 210px; left: -200px;">
-    <span class="function">(JiffyDOS Toggle)</span> PB2
-</div>
+            <!-- Pin 5: PB2 -->
+            <div class="pin pin-left output" style="top: 205px;">5</div>
+            <div class="pin-label pin-label-left" style="top: 210px; left: -220px;">
+                <span class="function">(JiffyDOS Toggle)</span> PB2
+            </div>
 
-<!-- Pin 6: PA7 -->
-<div class="pin pin-left input" style="top: 250px;">6</div>
-<div class="pin-label pin-label-left" style="top: 255px; left: -200px;">
-    <span class="function">(Flash Type)</span> PA7
-</div>
+            <!-- Pin 6: PA7 -->
+            <div class="pin pin-left databus" style="top: 250px;">6</div>
+            <div class="pin-label pin-label-left" style="top: 255px; left: -220px;">
+                <span class="function">(Data Bus D0)</span> PA7
+            </div>
 
-<!-- Pin 7: PA6 -->
-<div class="pin pin-left programming" style="top: 295px;">7</div>
-<div class="pin-label pin-label-left" style="top: 300px; left: -200px;">
-    <span class="function">(Reserved/MOSI)</span> PA6
-</div>
+            <!-- Pin 7: PA6 -->
+            <div class="pin pin-left databus" style="top: 295px;">7</div>
+            <div class="pin-label pin-label-left" style="top: 300px; left: -220px;">
+                <span class="function">(Data Bus D1)</span> PA6
+            </div>
             
             <!-- Right side pins (14-8) -->
             <!-- Pin 14: GND -->
             <div class="pin pin-right ground" style="top: 25px;">14</div>
-            <div class="pin-label pin-label-right" style="top: 30px; right: -200px;">
+            <div class="pin-label pin-label-right" style="top: 30px; right: -220px;">
                 GND <span class="function">(GROUND)</span>
             </div>
             
             <!-- Pin 13: PA0 -->
             <div class="pin pin-right output" style="top: 70px;">13</div>
-            <div class="pin-label pin-label-right" style="top: 75px; right: -200px;">
+            <div class="pin-label pin-label-right" style="top: 75px; right: -220px;">
                 PA0 <span class="function">(A15 - Bit 0)</span>
             </div>
             
             <!-- Pin 12: PA1 -->
             <div class="pin pin-right output" style="top: 115px;">12</div>
-            <div class="pin-label pin-label-right" style="top: 120px; right: -200px;">
+            <div class="pin-label pin-label-right" style="top: 120px; right: -220px;">
                 PA1 <span class="function">(A16 - Bit 1)</span>
             </div>
             
             <!-- Pin 11: PA2 -->
             <div class="pin pin-right output" style="top: 160px;">11</div>
-            <div class="pin-label pin-label-right" style="top: 165px; right: -200px;">
+            <div class="pin-label pin-label-right" style="top: 165px; right: -220px;">
                 PA2 <span class="function">(A17 - Bit 2)</span>
             </div>
             
             <!-- Pin 10: PA3 -->
             <div class="pin pin-right output" style="top: 205px;">10</div>
-            <div class="pin-label pin-label-right" style="top: 210px; right: -200px;">
+            <div class="pin-label pin-label-right" style="top: 210px; right: -220px;">
                 PA3 <span class="function">(A18 - Bit 3)</span>
             </div>
             
             <!-- Pin 9: PA4 -->
-            <div class="pin pin-right programming" style="top: 250px;">9</div>
-            <div class="pin-label pin-label-right" style="top: 255px; right: -200px;">
-                PA4 <span class="function">(Reserved/SCK)</span>
+            <div class="pin pin-right databus" style="top: 250px;">9</div>
+            <div class="pin-label pin-label-right" style="top: 255px; right: -220px;">
+                PA4 <span class="function">(Data Bus D3)</span>
             </div>
             
             <!-- Pin 8: PA5 -->
-            <div class="pin pin-right programming" style="top: 295px;">8</div>
-            <div class="pin-label pin-label-right" style="top: 300px; right: -200px;">
-                PA5 <span class="function">(Reserved/MISO)</span>
+            <div class="pin pin-right databus" style="top: 295px;">8</div>
+            <div class="pin-label pin-label-right" style="top: 300px; right: -220px;">
+                PA5 <span class="function">(Data Bus D2)</span>
             </div>
         </div>
         
@@ -276,15 +303,15 @@
             </div>
             <div class="legend-item">
                 <div class="legend-color output"></div>
-                <span>Output</span>
+                <span>Bank Output</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color input"></div>
-                <span>Input</span>
+                <span>Control Input</span>
             </div>
             <div class="legend-item">
-                <div class="legend-color unused"></div>
-                <span>Reserved</span>
+                <div class="legend-color databus"></div>
+                <span>Data Bus</span>
             </div>
             <div class="legend-item">
                 <div class="legend-color programming"></div>
@@ -292,14 +319,28 @@
             </div>
         </div>
         
+        <div class="info-box">
+            <h3>Flash Memory Support</h3>
+            <p><strong>SST39SF020A:</strong> 256KB = 8 banks (uses A15-A17, A18 unused)</p>
+            <p><strong>SST39SF040:</strong> 512KB = 16 banks (uses A15-A18)</p>
+            <p><strong>Bank Detection:</strong> Menu program determines flash type automatically</p>
+            <p><strong>Data Protocol:</strong> D0-D3 = Bank (0-15), D4 = JiffyDOS enable</p>
+        </div>
+
+        <div class="info-box">
+            <h3>External Connections</h3>
+            <p><strong>$D700 Trap:</strong> Pin 3 (PB1) connects to U3 Pin 12</p>
+            <p><strong>Reset Monitor:</strong> Pin 4 (PB3) connects to System Reset</p>
+            <p><strong>Data Bus:</strong> Pins 2,6,7,8,9 connect to U36 socket D0-D4</p>
+            <p><strong>JiffyDOS Control:</strong> Pin 5 (PB2) controls JiffyDOS enable</p>
+        </div>
+        
         <div class="programming-note">
-            <h3>ISP Programming Connections</h3>
+            <h3>ISP Programming (if needed)</h3>
             <p><strong>VCC:</strong> Pin 1 - Power (3.3V or 5V)</p>
             <p><strong>GND:</strong> Pin 14 - Ground</p>
             <p><strong>RESET:</strong> Pin 4 (PB3) - Reset/Programming enable</p>
-            <p><strong>MOSI:</strong> Pin 7 (PA6) - Master Out Slave In</p>
-            <p><strong>MISO:</strong> Pin 8 (PA5) - Master In Slave Out</p>
-            <p><strong>SCK:</strong> Pin 9 (PA4) - Serial Clock</p>
+            <p><strong>Note:</strong> Data bus pins can be used for programming when not in normal operation</p>
         </div>
     </div>
 </body>

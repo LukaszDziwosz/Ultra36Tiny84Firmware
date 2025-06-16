@@ -29,7 +29,7 @@ Ultra36Tiny84Firmware/
     •    Auto-detects Flash type via jumper input (internal pull-up)
 
 ## 🛠️ Pin Usage (ATtiny84A)
-![Alt text](pinout.png)
+![Alt text](pinout.pdf)
 
 ## 🔧 Programming & Upload
 
