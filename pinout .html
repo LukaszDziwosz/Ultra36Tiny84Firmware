@@ -127,7 +127,6 @@
         .input { background: #ffaa44; }
         .databus { background: #44ff88; }
         .programming { background: #ff88ff; }
-        .dual { background: linear-gradient(to right, #ffaa44 50%, #ff88ff 50%); }
         
         .legend {
             display: flex;
@@ -157,7 +156,6 @@
         .legend-color.input { background: #ffaa44; }
         .legend-color.databus { background: #44ff88; }
         .legend-color.programming { background: #ff88ff; }
-        .legend-color.dual { background: linear-gradient(to right, #ffaa44 50%, #ff88ff 50%); }
         
         .programming-note {
             margin-top: 20px;
@@ -225,7 +223,7 @@
             </div>
 
             <!-- Pin 4: PB3/RESET -->
-            <div class="pin pin-left dual" style="top: 160px;">4</div>
+            <div class="pin pin-left input" style="top: 160px;">4</div>
             <div class="pin-label pin-label-left" style="top: 165px; left: -220px;">
                 <span class="function">(RESET Sense)</span> PB3
             </div>
@@ -313,10 +311,6 @@
                 <div class="legend-color databus"></div>
                 <span>Data Bus</span>
             </div>
-            <div class="legend-item">
-                <div class="legend-color programming"></div>
-                <span>Programming</span>
-            </div>
         </div>
         
         <div class="info-box">
@@ -336,10 +330,13 @@
         </div>
         
         <div class="programming-note">
-            <h3>ISP Programming (if needed)</h3>
+            <h3>ISP Programming</h3>
             <p><strong>VCC:</strong> Pin 1 - Power (3.3V or 5V)</p>
             <p><strong>GND:</strong> Pin 14 - Ground</p>
             <p><strong>RESET:</strong> Pin 4 (PB3) - Reset/Programming enable</p>
+            <p><strong>MOSI:</strong> Pin 7 (PA6) - Master Out Slave In/p>
+            <p><strong>MISO:</strong> Pin 8 (PA5) - Master In Slave Out</p>
+            <p><strong>SCK:</strong> Pin 9 (PA4) - Serial Clock</p>
             <p><strong>Note:</strong> Data bus pins can be used for programming when not in normal operation</p>
         </div>
     </div>

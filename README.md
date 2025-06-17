@@ -26,10 +26,10 @@ Ultra36Tiny84Firmware/
     •    Reads RESET line to detect long-press and auto-return to Menu
     •    Single shared line to toggle JiffyDOS for C64/C128
     •    Bank and Jiffy state stored in EEPROM for persistence
-    •    Auto-detects Flash type via jumper input (internal pull-up)
+    •    Set Flash type via config.h file
 
 ## 🛠️ Pin Usage (ATtiny84A)
-![Alt text](pinout.pdf)
+![Alt text](pinout.png)
 
 ## 🔧 Programming & Upload
 
@@ -43,7 +43,6 @@ Ultra36Tiny84Firmware/
     4.    Upload the firmware via Sketch > Upload Using Programmer.
 
 ## 🧠 How It Works
-    •    During boot, the firmware checks the jumper state to determine EEPROM type.
     •    Sets A15–A18 accordingly based on the last saved bank number.
     •    Monitors $D700 trap pin for bank switching commands.
     •    Monitors the C128 RESET line for long hold (3s) → switches back to menu (bank 0).
