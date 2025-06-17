@@ -1,3 +1,13 @@
+//   _____  ___________              _______________
+//   __  / / /__  /_  /_____________ __|__  /_  ___/
+//   _  / / /__  /_  __/_  ___/  __ `/__/_ <_  __ \ 
+//   / /_/ / _  / / /_ _  /   / /_/ /____/ // /_/ / 
+//   \____/  /_/  \__/ /_/    \__,_/ /____/ \____/  
+// Ultra-36 Rom Switcher for Commodore 128 - ATTiny84A Frimware
+// Free for personal use.
+// Commercial use or resale (in whole or part) prohibited without permission.
+// (c) 2025 Lukasz Dziwosz / LukasSoft. All Rights Reserved.
+
 # Ultra36Tiny84Firmware
 
 Ultra-36Tiny84Firmware is the companion microcontroller firmware for the Ultra-36 internal ROM selector for Commodore 128 U36 Rom socket. It runs on an ATtiny84A and is responsible for bank switching, JiffyDOS toggling, and persistent state management via I/O lines.
