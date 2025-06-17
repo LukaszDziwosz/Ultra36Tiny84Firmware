@@ -1,0 +1,3 @@
+# .DS_Store is a macOS metadata file and doesn’t belong in source control.
+.DS_Store
+ultra36/.DS_Store
