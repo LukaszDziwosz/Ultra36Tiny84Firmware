@@ -26,6 +26,7 @@ Ultra36Tiny84Firmware/
     •    ATtiny84A microcontroller (DIP-14)
     •    SST39SF020A (256K) or SST39SF040 (512K) Flash EPROM
     •    Arduino IDE (for compiling and uploading)
+    •    SpenceKonde ATTinyCore - installed in BOARDS MANAGER
     •    USBasp or similar ISP programmer
 
 ## 🚀 Features
