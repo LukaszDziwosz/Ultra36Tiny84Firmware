@@ -26,6 +26,7 @@ void setup() {
   pinMode(PIN_A16, OUTPUT);
   pinMode(PIN_A17, OUTPUT);
   pinMode(PIN_A18, OUTPUT);
+  digitalWrite(PIN_A18, HIGH);  // Prevent accidental reset as uses PB3
   pinMode(PIN_JIFFY_CTRL, OUTPUT);
 
   // Configure inputs (Reset, Trap, Data bus)
