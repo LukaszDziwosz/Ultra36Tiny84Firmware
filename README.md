@@ -27,8 +27,6 @@ Ultra36Tiny84Firmware/
     •    SST39SF020A (256K) or SST39SF040 (512K) Flash EPROM
     •    Arduino IDE (for compiling and uploading)
     •    USBasp or similar ISP programmer
-    •    A jumper to distinguish EPROM type (020A vs 040)
-
 
 ## 🚀 Features
     •    Supports 8 ROM banks (SST39SF020A) or 16 banks (SST39SF040)
